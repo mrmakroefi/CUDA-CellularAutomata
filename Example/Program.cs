@@ -26,8 +26,8 @@ namespace CUDACheck {
             IntPtr testNum = Marshal.AllocHGlobal(roll.Length);
             Marshal.Copy(roll, 0, testNum, roll.Length);
             
-            CUDA.CPU_simulateCA(testNum, width, height, 35, 3, 3, 1, iterations);
-            //CUDA.GPU_simulateCA(testNum, width, height, 35, 3, 3, 1, iterations, 128);
+            //CUDA.CPU_simulateCA(testNum, width, height, 35, 3, 3, 1, iterations);
+            CUDA.GPU_simulateCA(testNum, width, height, 35, 3, 3, 1, iterations, 128);
 
             CUDA.CPU_floodFill(testNum, width, height, 12, 8);
 

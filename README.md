@@ -7,3 +7,6 @@ In practice, Cellular Automata using GPU to generate map is not really necessary
 How to:
 1. Build kernel.cu as .dll -> need to install CUDA stuff
 2. Just use dat .dll
+
+## Maps used to make level in games
+![untitled](https://user-images.githubusercontent.com/23701036/43843421-b6f35b1e-9b51-11e8-94ba-2bb93859ca4f.png)
